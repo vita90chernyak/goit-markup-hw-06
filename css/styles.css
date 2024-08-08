@@ -8,10 +8,12 @@ body {
     color: #2E2F42;
 }
 .menu-links .link:hover,
-.menu-links .link:focus {
+.menu-links .link:focus
+ {
  color: #4D5AE5;
 }
-.menu-links .link:active {
+.menu-links .link:active 
+{
     color: #4D5AE5;
     text-decoration: underline;
 }
