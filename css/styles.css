@@ -4,16 +4,23 @@ body {
     color: #2e2f42;
 }
 
-.menu-links {
+.links {
     color: #2E2F42;
 }
-.menu-links:hover,
-.menu-links:focus
+.links:hover,
+.links:focus
  {
  color: #4D5AE5;
 }
-.menu-links:active 
+.links:active 
 {
     color: #4D5AE5;
     text-decoration: underline;
+}
+
+.date {
+    color: #434455;
+}
+.date:hover {
+    color: #4D5AE5;
 }
