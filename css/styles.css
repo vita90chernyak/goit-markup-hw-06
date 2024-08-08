@@ -7,12 +7,12 @@ body {
 .menu-links {
     color: #2E2F42;
 }
-.menu-links .link:hover,
-.menu-links .link:focus
+.menu-links:hover,
+.menu-links:focus
  {
  color: #4D5AE5;
 }
-.menu-links .link:active 
+.menu-links:active 
 {
     color: #4D5AE5;
     text-decoration: underline;
