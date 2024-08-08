@@ -4,7 +4,12 @@ body {
     color: #2e2f42;
 }
 
+
 .links {
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
     color: #2E2F42;
 }
 .links:hover,
@@ -18,9 +23,15 @@ body {
     text-decoration: underline;
 }
 
+
 .date {
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
     color: #434455;
 }
-.date:hover {
+.date:hover,
+.links:focus {
     color: #4D5AE5;
 }
