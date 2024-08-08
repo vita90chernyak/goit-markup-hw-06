@@ -35,3 +35,16 @@ body {
 .links:focus {
     color: #4D5AE5;
 }
+
+.title {
+    background: #2e2f42;
+}
+.title-name {
+    font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07143;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #fff;
+        text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
