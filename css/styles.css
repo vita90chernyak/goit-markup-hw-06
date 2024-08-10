@@ -6,20 +6,38 @@ body {
     
 }
 
+.accent-title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+        font-size: 18px;
+        line-height: 1.16667;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #4d5ae5;
+}
 
-.links {
+.accent-title-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+        font-size: 18px;
+        line-height: 1.16667;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #2e2f42;
+}
+.menu-links {
     font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
     color: #2E2F42;
 }
-.links:hover,
-.links:focus
+.menu-links:hover,
+.menu-links:focus
  {
  color: #4D5AE5;
 }
-.links:active 
+.menu-links:active 
 {
     color: #4D5AE5;
     text-decoration: underline;
@@ -124,8 +142,7 @@ font-weight: 500;
         }       
 
         .main-page-team {
-            width: 1440px;
-                height: 732px;
+           
             background: #f4f4fd;
             margin: auto;
                     }
@@ -175,8 +192,8 @@ font-weight: 500;
 
  .page-footer {
     background: #2e2f42;
-    width: 1440px;
-        height: 312px;
+    
+    
  }
  .footer-item-descr {
     font-weight: 400;
@@ -192,6 +209,7 @@ font-weight: 500;
         padding-top: 100px;
         padding-left: 156px;
         padding-bottom: 100px;
+        
  }
 .accent {
     font-family: "Raleway", sans-serif;
@@ -214,3 +232,34 @@ font-weight: 500;
  }
 
  
+ .works-portfolio-title {
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11111;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
+        padding-top: 120px;
+        padding-left: 455px;
+ }
+
+ 
+.works-item-title {
+font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-top: 32;
+    margin-bottom: 8px;
+}
+ 
+ .works-item-descr {
+font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    margin-top: 0;
+    margin-bottom: 32px;
+ }
