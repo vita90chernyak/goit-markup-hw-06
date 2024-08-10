@@ -102,7 +102,7 @@ font-weight: 500;
     background: #404BBF;
 }
 
-.benefits-item-title {
+.wrapper-benefits-item-title {
 font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -110,7 +110,7 @@ font-weight: 500;
     color: #2e2f42;
     }
 
-        .benefits-item-descr {
+        .wrapper-benefits-item-descr {
             font-weight: 400;
                 font-size: 16px;
                 line-height: 1.5;
@@ -118,7 +118,7 @@ font-weight: 500;
                 color: #434455;
         }
 
-       .benefits-title {
+       .wrapper-benefits-title {
         font-weight: 700;
             font-size: 36px;
             line-height: 1.11111;
@@ -127,7 +127,7 @@ font-weight: 500;
             color: #2e2f42;
        }
 
-       .benefits-item {
+       .wrapper-benefits-item {
         width: 264px;
             height: 104px;
  
