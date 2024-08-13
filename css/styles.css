@@ -264,19 +264,13 @@ font-weight: 500;
     gap: 24px;
     align-items: center;
         justify-content: center;
-        
-        
+      
+                
 }
 
 
-.team-container {
-    
-    border-radius: 0 0 4px 4px;
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-        background: #fff;
-        width: calc(1128px-(3*24px)/4);
+
        
-}
 
     .page-team {
            
@@ -344,13 +338,7 @@ padding-bottom: 72px;
 
 
 
-.portfol-item {
-    
-    border-bottom: 1px solid #e7e9fc;
-        border-left: 1px solid #e7e9fc;
-        border-right: 1px solid #e7e9fc;
 
-}
 
 .works-item {
     display: flex;
