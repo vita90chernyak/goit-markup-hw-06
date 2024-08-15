@@ -40,6 +40,7 @@ h1,h2,h3 {
 
 img {
     display: block;
+    
 }
 
 .logo-title {
@@ -54,17 +55,13 @@ font-weight: 700;
 
    }
 
-.logo {
+.nav {
     display: flex;
-               
-        padding-top: 24px;
-        padding-bottom: 24px;
-                    
+    align-items: center;
+
 }
 
-
-
-.container-header {
+.page-header .container {
         display: flex;
         width: 1158px;
         margin: 0 auto;
@@ -73,8 +70,9 @@ font-weight: 700;
            }
 
 .accent-logo {
-            color: #2e2f42;
+     color: #2e2f42;
 }
+
 
 
 
@@ -126,19 +124,11 @@ font-weight: 700;
     display: flex;
         gap: 40px;
     padding-bottom: 24px;
-        margin-top: 24px;
-        
+        margin-top: 24px;      
 
 }
 
-.date-info-one {
-margin-right: 40px;
 
-}
-
-.date-info-two {
-    margin-right: 0;
-}
 
 .date {
     font-weight: 400;
@@ -155,6 +145,7 @@ margin-right: 40px;
 
 .info-descr {
         font-style: normal;
+        margin-left: auto;
       
         
     }
@@ -225,10 +216,15 @@ font-weight: 500;
       .visually-hidden {
                 text-align: center;
                 position: absolute;
-                    clip: rect(0 0 0 0);
                     width: 1px;
                     height: 1px;
                     margin: -1px;
+                    border: 0;
+                    padding: 0;
+                    white-space: nowrap;
+                    clip-path: inset(100%);
+                    clip: rect(0 0 0 0);
+                    overflow: hidden;
                 
       }
 
@@ -370,9 +366,8 @@ font-weight: 500;
 
 
                 .name-portfolio {
-                    width: calc((100% - 48px) / 3);
-                    
-                }
+                width: calc((100% - 48px) / 3);
+                  }
 
 
 
