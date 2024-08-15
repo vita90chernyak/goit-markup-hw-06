@@ -298,6 +298,10 @@ font-weight: 500;
                     }
 
 
+        .page-team .container {
+            width: 1158px;
+             padding: 0 15px;
+        }
 
  .page-team-title {
     font-weight: 700;
@@ -365,11 +369,15 @@ font-weight: 500;
                 }
 
 
-                .name-portfolio {
-                width: calc((100% - 48px) / 3);
-                  }
+     .name-portfolio {
+     width: calc((100% - 48px) / 3);
+     }
 
 
+     .page-portfolio .container {
+        padding: 0 15px;
+        width: 1158px;
+     }
 
 .portfolio-item {
     padding: 32px 16px;
