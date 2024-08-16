@@ -11,7 +11,7 @@ body {
     border-bottom: 1px solid #e7e9fc;
 }
 .container {
-    
+        
 max-width: 1178px;
 padding: 0;
 margin: 0 auto;
@@ -239,11 +239,7 @@ font-weight: 500;
 }
 
 .benefits {
-    display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-direction: column;
-        gap: 8px;
+    
         width: calc((100% - 72px) / 4);
         
     }
@@ -256,6 +252,7 @@ font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
     
     
     }
@@ -267,11 +264,10 @@ font-weight: 500;
                 letter-spacing: 0.02em;
                 color: #434455;
                 margin: auto;
-                display: flex;
-                                    
-                   
                 width: calc(1128px-(3*24px)/4);
-        }
+                }
+                   
+             
 
           
          
@@ -322,6 +318,9 @@ font-weight: 500;
     border-radius: 0px 0px 4px 4px;
  }
 
+ .page-title:last-child {
+ margin-right: 0
+ }
  .team-title {
     font-weight: 500;
         font-size: 20px;
@@ -329,7 +328,7 @@ font-weight: 500;
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
-        
+        margin-bottom: 8px;
         
  }
 
@@ -340,7 +339,7 @@ font-weight: 500;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        gap: 8px;
+        
      }
 
  .team-descr {
@@ -377,6 +376,14 @@ font-weight: 500;
      width: calc((100% - 48px) / 3);
      }
 
+     .name-portfolio:nth-child(3n+1) {
+      margin-right: 0
+     }
+
+         .name-portfolio:nth-child(n+4) {
+          margin-bottom: 0
+         }
+
 
      .page-portfolio .container {
         padding: 0 15px;
@@ -391,7 +398,7 @@ font-weight: 500;
         align-items: flex-start;
         justify-content: center;
         flex-direction: column;
-        gap: 8px;
+        
     
 }
 
@@ -410,7 +417,7 @@ font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-        
+        margin-bottom: 8px;
 }
  
  .works-descr {
@@ -440,9 +447,8 @@ font-weight: 400;
         text-transform: uppercase;
         color: #4d5ae5;
         display: inline-block;
-        margin: auto;
-
-       
+        
+         margin-bottom: 16px;
  }
 
   .footer-descr {
@@ -464,5 +470,6 @@ color: #f4f4fd
     box-sizing: border-box;
     padding-top: 100px;
     max-width: 264px;
+   
     
   }
