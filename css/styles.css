@@ -13,6 +13,8 @@ body {
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
+
 .container {
         
 max-width: 1178px;
@@ -40,7 +42,7 @@ a {
     text-decoration: none;
 }
 
-h1,h2,h3,h4,p {
+h1,h2,h3,p {
     margin: 0;
 }
 
@@ -165,6 +167,7 @@ font-weight: 700;
     }
 
 
+    
    
 .main-page {
     
@@ -177,7 +180,7 @@ font-weight: 700;
                 to bottom,
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-                url(/images/people-office.jpg);
+                url(../images/people-office.jpg);
               background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
