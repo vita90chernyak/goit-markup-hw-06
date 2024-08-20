@@ -395,7 +395,7 @@ font-weight: 500;
 
      .name-portfolio {
      width: calc((100% - 48px) / 3);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
      }
      
 
@@ -404,6 +404,8 @@ font-weight: 500;
                 
          }
 
+
+         
      .name-portfolio:nth-child(3n+1) {
       margin-right: 0
      }
@@ -646,24 +648,22 @@ position: absolute;
     left: 0;
     width: 100%;
     height: 100%;
-    transition: transform 250ms ease-in-out;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
         transform: translateY(100%);
         font-weight: 400;
             font-size: 16px;
             line-height: 1.5;
             letter-spacing: 0.02em;
-            padding-top: 40px;
-            padding-left: 32px;
+            padding: 40px 32px;
 }
 
 
-
-
-.name-portfolio {
-
+.works-image {
     position: relative;
     overflow: hidden;
 }
+
+
 .name-portfolio:hover .overlay {
     transform: translateY(0);
 }
