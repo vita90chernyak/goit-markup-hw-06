@@ -9,12 +9,17 @@ body {
 
 .page-header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .container {
         
 max-width: 1178px;
 padding: 0;
 margin: 0 auto;
+
+
 
 
 }
@@ -69,6 +74,9 @@ font-weight: 700;
         padding: 0 15px;
 
            }
+
+
+
 
 .accent-logo {
      color: #2e2f42;
@@ -139,7 +147,7 @@ font-weight: 700;
         line-height: 1.5;
         letter-spacing: 0.02em;
     color: #434455;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .date:hover,
@@ -171,8 +179,9 @@ font-weight: 700;
                 rgba(46, 47, 66, 0.7)),
                 url(/images/people-office.jpg);
               background-repeat: no-repeat;
-            background-position: 50% 50%;
+            background-position: center;
             background-size: cover;
+            max-width: 1440px;
 }
 
 .main-page-text {
@@ -494,15 +503,21 @@ color: #f4f4fd
                 margin: auto;
                 
                 
+                
                       
   }
 
-.social-links .link {
+
+  .social-item {
+    width: 40px;
+        height: 40px;
+  }
+ .link {
     display: flex;
         justify-content: center;
         align-items: center;
-        width: 40px;
-        height: 40px;
+        width: 100%;
+        height: 100%;
         border-radius: 50%;
         background-color: #4D5AE5;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -510,7 +525,8 @@ color: #f4f4fd
         
 }
 
-.social-links .link:hover
+.link:hover,
+.link:focus
                            {
     background-color:#404BBF;
 }
@@ -542,38 +558,31 @@ color: #f4f4fd
 
   }
 
-  .social-links-footer .link:hover {
+  .social-links-footer .link:hover,
+  .social-links-footer .link:focus
+                                 {
       background-color: #31D0AA;
   }
 
 
 
-  .footer-links {
-    
-        display: flex;
-        
-        flex-direction: column;
-     padding-bottom: 0px;
-    margin-left: 120px;
-    max-width: 208px;
-    
-  }
+ 
 
-   .footer-links .media-title {
+   .media-title {
     
     font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #fff;
+        color: #FFFFFF;
         font-family: "Roboto", sans-serif;
-        padding: 0;
-       
+        margin-bottom: 16px;
+   }
         
         
+    
         
-        
-  }
+  
 
   .menu-links.current {
     position: relative;
@@ -591,27 +600,23 @@ color: #f4f4fd
         left: 0;
             bottom: 0;
         display: block;
+        bottom: -1px;
   }
 
 
- .page-footer .social-links-footer {
-    margin: auto;
-        padding: 0;
-        max-width: 208px;
- }
+ 
 
 
  .box-footer {
-    display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+   
+        margin-right: 120px;
         
  }
 
 
 .page-footer .container {
  display: flex;
- align-items:normal;
+ align-items:baseline;
  flex-direction:row;
  
 }
