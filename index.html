@@ -481,12 +481,31 @@
     </li>
 </ul>
 </div>
+
+
+<div class="footer__subscribe-wrapper">
+    <p class="footer__subscribe-text">Subscribe</p>
+    <form class="footer__subscribe-form">
+        <label class="footer__subscribe-label">
+            <input class="footer__subscribe-input" type="email" name="email-field" placeholder="E-mail" />
+        </label>
+
+        <button type="submit" name="email-subscribe-button" class="footer__subscribe-button">Subscribe
+            <svg class="footer__subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send-1"></use>
+            </svg>
+        </button>
+    </form>
+</div>
 </div>
 
    </footer>
 
 
-<div class="backdrop is-hidden" data-modal>
+
+
+
+<div class="backdrop is-open" data-modal>
 <div class="modal">
     <button class="modal__button-close" type="button" data-modal-close>
      <svg class="modal__icon-close" width="8" height="8">
@@ -555,12 +574,7 @@
         </label>
 </div>
 
-
-
-
-
-
-
+<button class="modal__button-submit" type="submit">Send</button>
 
 </form>
 </div>
