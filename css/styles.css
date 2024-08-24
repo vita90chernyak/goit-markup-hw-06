@@ -730,7 +730,7 @@ position: absolute;
 }
 
 .modal__button-close:hover,
-.modal__button-close:focus  { 
+.modal__button-close:focus-within  { 
 background-color: #404bbf;
 border: none;
 }
@@ -742,7 +742,7 @@ fill: #2e2f42;
 }
 
 .modal__button-close:hover .modal__icon-close,
-.modal__button-close:focus .modal__icon-close {
+.modal__button-close:focus-within .modal__icon-close {
 fill: #ffffff;
         }
 
@@ -796,13 +796,13 @@ fill: #ffffff;
     
 }
 
-.modal__input:focus {
+.modal__input:focus-within {
     border-color: #4D5AE5;
 }
 
 
 
-.modal__input:focus+.modal__icon {
+.modal__input:focus-within+.modal__icon {
     fill: #4D5AE5;
 
 }
@@ -818,7 +818,7 @@ fill: #ffffff;
 }
 
 .modal__text-field-wrapper {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     
 }
 
@@ -841,8 +841,12 @@ fill: #ffffff;
             outline: transparent;
 }
 
-.modal__text-field:focus  {
+.modal__text-field:focus-within  {
     border-color: #4D5AE5;
+}
+
+.modal__check-wrapper {
+    margin-bottom: 24px;
 }
 .modal__check-text {
 
@@ -878,7 +882,7 @@ fill: #ffffff;
 
 }
 
-.modal__check-input:checked +.modal__check-box {
+.modal__check-input:checked + .modal__check-text .modal__check-box {
     border: none;
     background-color: #404bbf;
     fill: #F4F4FD;
@@ -981,7 +985,7 @@ gap: 24px;
     }
 
         .footer__subscribe-button:hover,
-        .footer__subscribe-button:focus {
+        .footer__subscribe-button:focus-within {
             background-color: #404BBF;
                 }
 
