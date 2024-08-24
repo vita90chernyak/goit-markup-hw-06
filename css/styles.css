@@ -687,11 +687,6 @@ position: absolute;
         
 }
 
-.backdrop.is-open {
-    opacity: 0;
-    pointer-events: none;
-     visibility: hidden;
-}
 
 .modal {
     position: absolute;
@@ -742,9 +737,10 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 fill: #2e2f42; 
 }
 
-.modal__button-close:hover + .modal__icon-close,
-.modal__button-close:focus + .modal__icon-close {
+.modal__button-close:hover .modal__icon-close,
+.modal__button-close:focus .modal__icon-close {
 fill: #ffffff;
+
         }
 
 .modal__title {
@@ -877,7 +873,7 @@ fill: #ffffff;
 .modal__link-text {
     line-height: 1.3;
         text-decoration: underline;
-        text-decoration-skip-ink: none;
+        
         color: #4d5ae5;
         
 
@@ -937,9 +933,6 @@ fill: #ffffff;
 .footer__subscribe-form {
 display: flex;
 gap: 24px;
-
-    
-  
 
 }
 
