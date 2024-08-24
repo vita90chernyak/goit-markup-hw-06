@@ -680,15 +680,17 @@ position: absolute;
         width: 100%;
         height: 100%;
         background: rgba(46, 47, 66, 0.4);
-        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        opacity: 1;
 
         
 }
 
 .backdrop.is-open {
     opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
+        pointer-events: none;
+        visibility: hidden;
 }
 
 .modal {
@@ -703,6 +705,7 @@ position: absolute;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
         background-color: #fcfcfc;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 72px 24px 24px 24px;
    
 }
 
@@ -710,27 +713,26 @@ position: absolute;
     padding: 0;
     position: absolute;
     top: 24px;
-        right: 24px;
-        border-radius: 50%;
-        border: none;
-        display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 24px;
-                height: 24px;
-                border: 1px solid rgba(0, 0, 0, 0.1);
-                background-color: #E7E9FC;
-                transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+     right: 24px;
+     border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #E7E9FC;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
                         
 
 }
 
 .modal__button-close:hover,
-.modal__button-close:focus {
-    background-color: #404BBF;
-    border: none;
-    
+.modal__button-close:focus  { 
+background-color: #404bbf;
+border: none;
 }
 
 
@@ -741,7 +743,7 @@ fill: #2e2f42;
 
 .modal__button-close:hover .modal__icon-close,
 .modal__button-close:focus .modal__icon-close {
-fill: #fff;
+fill: #ffffff;
         }
 
 .modal__title {
@@ -766,7 +768,7 @@ fill: #fff;
 .modal__label {
     font-weight: 400;
         font-size: 12px;
-        line-height: 1.16667;
+        line-height: 1.17;
         letter-spacing: 0.04em;
         color: #8e8f99;
         display: block;
@@ -782,17 +784,20 @@ fill: #fff;
 .modal__input {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
-    width: 360px;
+    width: 100%;
     height: 40px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: transparent;
-    padding-left: 24px;
-    flex-shrink: 0;
+    padding-left: 38px;
+    
+    outline: transparent;
     
     
 }
 
-
+.modal__input:focus {
+    border-color: #4D5AE5;
+}
 
 
 
@@ -812,7 +817,7 @@ fill: #fff;
 }
 
 .modal__text-field-wrapper {
-    margin-bottom: 16px;
+    margin-bottom: 24px;
     margin-left: 24px;
 }
 
@@ -820,22 +825,23 @@ fill: #fff;
 .modal__text-field {
     font-weight: 400;
         font-size: 12px;
-        line-height: 1.16667;
+        line-height: 1.17;
         letter-spacing: 0.04em;
         color: rgba(46, 47, 66, 0.4);
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         flex-shrink: 0;
         border: 1px solid rgba(46, 47, 66, 0.4);
             border-radius: 4px;
-            width: 360px;
+            width: 100%;
             min-height: 120px;
             padding: 8px 16px;
             resize: none;
             background-color: transparent;
+            outline: transparent;
 }
 
 .modal__text-field:focus  {
-    border-color: #4d5ae5;
+    border-color: #4D5AE5;
 }
 .modal__check-text {
 
@@ -871,10 +877,10 @@ fill: #fff;
 
 }
 
-.modal__check-input:checked +.modal__check-text .modal__check-box {
+.modal__check-input:checked +.modal__check-box {
     border: none;
-    background-color: #4D5AE5;
-    fill: #f4f4fd;
+    background-color: #404bbf;
+    fill: #F4F4FD;
 }
 
 .modal__button-submit {
@@ -887,7 +893,7 @@ fill: #fff;
     color: #fff;
     border-radius: 4px;
      padding: 16px 32px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
      display: block;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -968,7 +974,7 @@ gap: 24px;
                 cursor: pointer;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         padding: 8px 24px;
-        width: 165px;
+        min-width: 165px;
             height: 40px;
                 
     }
