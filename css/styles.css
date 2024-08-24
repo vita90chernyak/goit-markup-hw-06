@@ -715,7 +715,7 @@ position: absolute;
     top: 24px;
      right: 24px;
      border-radius: 50%;
-    border: none;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -730,10 +730,11 @@ position: absolute;
 }
 
 .modal__button-close:hover,
-.modal__button-close:focus-within  { 
-background-color: #404bbf;
-border: none;
+.modal__button-close:focus {
+    background-color: #404bbf;
+    border: none;
 }
+
 
 
 .modal__icon-close {
@@ -741,8 +742,8 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 fill: #2e2f42; 
 }
 
-.modal__button-close:hover .modal__icon-close,
-.modal__button-close:focus-within .modal__icon-close {
+.modal__button-close:hover + .modal__icon-close,
+.modal__button-close:focus + .modal__icon-close {
 fill: #ffffff;
         }
 
@@ -802,7 +803,7 @@ fill: #ffffff;
 
 
 
-.modal__input:focus-within+.modal__icon {
+.modal__input:focus-within + .modal__icon {
     fill: #4D5AE5;
 
 }
@@ -985,7 +986,7 @@ gap: 24px;
     }
 
         .footer__subscribe-button:hover,
-        .footer__subscribe-button:focus-within {
+        .footer__subscribe-button:focus {
             background-color: #404BBF;
                 }
 
