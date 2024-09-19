@@ -17,7 +17,18 @@ min-width: 320px;
     margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
 
+@media screen and (min-width: 1158px) {
+    .container {
+        width: 1158px;
+        padding: 0 15px;
+    }
+}
 
 
     
@@ -534,27 +545,28 @@ font-weight: 500;
 
 .teams {
     display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 72px;
+    flex-direction: column;
+    justify-content: center;
+     align-items: center;
+     gap: 72px;
                 
 }
+
 
 @media screen and (min-width: 768px) {
     .teams {
         display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            row-gap: 64px;
-            column-gap: 24px;
+        flex-direction: row;
+        flex-wrap: wrap;
+         row-gap: 64px;
+         column-gap: 24px;
     }
 }
 
 @media screen and (min-width: 1158px) {
     .teams {
-    flex-wrap: nowrap;
-    gap: 24px;
+        flex-wrap: nowrap;
+        gap: 24px;
     }
 }
         
@@ -569,21 +581,6 @@ font-weight: 500;
         
  }
 
-@media screen and (min-width: 768px) {
-    .page-title {
-        width: calc((100%-24px) / 2);
-    }
-}
-
-@media screen and (min-width: 1158px) {
-    .page-title {
-        width: calc((100%-72px) / 4);
-    }
-}
-
- /*.page-title:last-child {
- margin-right: 0
- } */
 
 .team-item {
 
@@ -696,20 +693,6 @@ font-weight: 500;
 
          
 
-     @media screen and (min-width: 768px) {
-     .name-portfolio {
-     width: calc((100% - 24px) / 2);
-         }
-        }
-        
-     @media screen and (min-width: 1158px) {
-    .name-portfolio {
-        
-    width: calc((100% - 48px) / 3);
-        
-     }
-        
-    }
 
 
          .name-portfolio:hover {
@@ -717,7 +700,20 @@ font-weight: 500;
                 
          }
 
+  @media screen and (min-width: 768px) {
+      .name-portfolio {
+          width: calc((100% - 24px) / 2);
+      }
+  }
 
+  @media screen and (min-width: 1158px) {
+      .name-portfolio {
+
+          width: calc((100% - 48px) / 3);
+
+      }
+
+  }
          
      .name-portfolio:nth-child(3n+1) {
       margin-right: 0
@@ -751,7 +747,7 @@ font-weight: 500;
         
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px)  {
     .works-item {
         display: flex;
         flex-direction: row;
